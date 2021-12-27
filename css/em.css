@@ -1,0 +1,41 @@
+.level1 {
+  /* 32px */
+  font-size: 2em;
+}
+
+.level2 {
+  /* 64px */
+  font-size: 2em;
+}
+
+.level3 {
+  /* 128px */
+  font-size: 2em;
+}
+
+.level4 {
+  /* 256px */
+  font-size: 2em;
+}
+
+/* 복잡한 구조에서 em을 많이 사용한다면 폰트 사이즈를 즉각적으로 계산하기 어려움*/
+
+.padding-demo {
+  display: inline-block;
+  font-size: 5em;
+  background-color: mediumaquamarine;
+  /* padding이 폰트 사이즈가 변해도 10px로 고정되어 있다 패딩도 폰트 사이즈에 따라 변경되어야 한다면 em을 사용한다 */
+  /* padding: 10px; */
+  padding: 1em;
+}
+@media screen and (max-width: 780px) {
+  .padding-demo {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .padding-demo {
+    font-size: 1.5em;
+  }
+}
